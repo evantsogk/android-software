@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03002d</color>
+    <color name="colorPrimaryDark">#010013</color>
+    <color name="colorAccent">#03002d</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#fff</color>
+    <color name="lightGray">#9f9f9f</color>
+    <color name="blue">#05004d</color>
+    <color name="lightBlue">#0d00c6</color>
+    <color name="drawerItem">#0c1b78</color>
+    <color name="drawerItemSelected">#000000</color>
+    <color name="gray">#bebebe</color>
+    <color name="red">#930001</color>
+    <color name="darkBlue">#010013</color>
+    <color name="barColor">#a7bdff</color>
+</resources>

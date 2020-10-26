@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<users>
+    <user>
+        <uid>0</uid>
+        <user_phone>6900000000</user_phone>
+        <username>Baggelis</username>
+        <password>b12345</password>
+        <data>1850</data>
+        <talktime>128</talktime>
+        <sms>0</sms>
+    </user>
+    <user>
+        <uid>1</uid>
+        <user_phone>6911111111</user_phone>
+        <username>Katerina</username>
+        <password>k12345</password>
+        <data>634</data>
+        <talktime>35</talktime>
+        <sms>832</sms>
+    </user>
+    <user>
+        <uid>2</uid>
+        <user_phone>6922222222</user_phone>
+        <username>Mike</username>
+        <password>m12345</password>
+        <data>1</data>
+        <talktime>469</talktime>
+        <sms>3</sms>
+    </user>
+</users>

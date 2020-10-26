@@ -1,0 +1,149 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="gr.aueb.softeng.project1805.ui.TransferActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_data"
+        android:theme="@style/PrimaryButton"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="240dp"
+        android:layout_marginTop="130dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/white"
+
+        android:text="@string/DATA"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_minutes"
+        android:theme="@style/PrimaryButton"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="130dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/white"
+
+        android:text="@string/talk"/>
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_sms"
+        android:theme="@style/PrimaryButton"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="280dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="130dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/white"
+
+        android:text="@string/sms"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:theme="@style/EditTextHintTransfer"
+        android:id="@+id/input_quantity_widget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        app:titleTextColor="@color/blue"
+        app:subtitleTextColor="@color/blue"
+        app:layout_constraintTop_toBottomOf="@id/btn_data"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:errorEnabled="true"
+        >
+        <EditText android:id="@+id/input_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="@color/blue"
+            android:textColorHint="@color/blue"
+            android:hint="Ποσότητα" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:theme="@style/EditTextHintTransfer"
+        android:id="@+id/input_mobile_widget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        app:titleTextColor="@color/blue"
+        app:subtitleTextColor="@color/blue"
+        app:layout_constraintTop_toBottomOf="@id/input_quantity_widget"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:errorEnabled="true"
+        >
+        <EditText android:id="@+id/input_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="@color/blue"
+            android:textColorHint="@color/blue"
+            android:hint="Αριθμός" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_transfer"
+        android:theme="@style/PrimaryButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_mobile_widget"
+        android:textColor="@color/white"
+
+        android:text="Παραχωρηση"/>
+
+    <TextView
+        android:id="@+id/quantity_type"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="75dp"
+        app:layout_constraintRight_toRightOf="@id/input_quantity_widget"
+        app:layout_constraintTop_toBottomOf="@id/btn_data"
+        android:text="@string/MB"
+        android:textColor="@color/blue"/>
+
+
+
+
+
+
+    <include layout="@layout/content_transfer" />
+
+</android.support.constraint.ConstraintLayout>
+

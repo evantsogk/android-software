@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">BKM</string>
+    <string name="BKM">BKM</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="progressBarText">Σύνδεση&#8230;</string>
+    <string name="title_activity_home">BKM</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="home_menu">Αρχική</string>
+    <string name="packages_menu">Πακέτα</string>
+    <string name="transfer_menu">Παραχώρηση</string>
+    <string name="statistics_menu">Στατιστικά</string>
+    <string name="history_menu">Ιστορικό</string>
+    <string name="update_menu">Ενημέρωση</string>
+    <string name="logout_menu">Αποσύνδεση</string>
+
+    <string name="no_packages">Κανένα ενεργό πακέτο&#8230; :/</string>
+    <string name="from_packages">Από Πακέτα</string>
+    <string name="from_friends">Από Φίλους</string>
+    <string name="MB">MB</string>
+    <string name="minutes">Λεπτά</string>
+    <string name="sms">SMS</string>
+    <string name="Data">Data</string>
+    <string name="talktime">Ομιλία</string>
+	<string name="DATA">DATA</string>
+    <string name="talk">ΟΜΙΛΙΑ</string>
+    <string name="total">Συνολικό Κόστος</string>
+    <string name="data_consumption">Κατανάλωση Data</string>
+    <string name="minutes_consumption">Κατανάλωση Ομιλίας</string>
+    <string name="sms_consumption">Κατανάλωση SMS</string>
+    <string name="title_activity_packages">Πακέτα</string>
+    <string name="title_activity_transfer">Παραχώρηση</string>
+    <string name="title_activity_history">Ιστορικό</string>
+    <string name="title_activity_statistics">Στατιστικά</string>
+    <string name="title_activity_update">Ενημέρωση</string>
+</resources>

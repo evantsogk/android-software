@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<accounts>
+	<account>
+		<card_num>0000 0000 0007</card_num>
+		<balance>5000.90</balance>
+	</account>
+	<account>
+		<card_num>1111 1111 1118</card_num>
+		<balance>10.0</balance>
+	</account>
+	<account>
+		<card_num>2222 2222 2229</card_num>
+		<balance>30.70</balance>
+	</account>
+</accounts>
