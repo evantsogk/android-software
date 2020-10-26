@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>510</y>
+      <w>350</w>
+      <h>390</h>
+    </coordinates>
+    <panel_attributes>User
+--
+-uid: int
+-phoneNum: String
+-username: String
+-password: String
+-remainingData: int
+-remainingTalkTime: int
+-remainingSMS: int
+
+--
++getUid(): int
++setUid(uid: int): void
++getPhoneNum(): String
++setPhoneNum(phoneNum: String): void
++getUsername(): String
++setUsername(username: String): void
++getPassword(): String
++setPassword(password: String): void
++getRemainingData(): int
++setRemainingData(remainingData: int): void
++getRemainingTalkTime(): int
++setRemainingTalkTime(remainingTalkTime: int): void
++getRemainingSMS(): int
++setRemainingSMS(remainingSMS: int): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>380</y>
+      <w>30</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=*
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>0</y>
+      <w>340</w>
+      <h>390</h>
+    </coordinates>
+    <panel_attributes>Transfer
+--
+-date: Calendar
+-senderNum: String
+-receiverNum: String
+-quantity: int
+-serviceType: ServiceType
+-transferType: TransferType
+-received: boolean
+
+--
++getDate(): Calendar
++setDate(date: Calendar): void
++getSenderNum(): String
++setSenderNum(senderNum: String): void
++getReceiverNum(): String
++setReceiveNum(receiverNum: String): void
++getQuantity(): int
++setQuantity(quantity: int): void
++getServiceType(): ServiceType
++setServiceType(serviceType: ServiceType): void
++getTransferType(): TransferType
++setTransferType(transferType: TransferType): void
++getReceived(): boolean
++setReceived(): void
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>890</y>
+      <w>30</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=*
+m2=1</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>1010</y>
+      <w>330</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>ActivePackage
+--
+-packageId: int
+-activationDate: Calendar
+-isActive: boolean
+-remainingQuantity: int
+
+--
++getPackageId(): int
++setPackageId(packageId: int): void
++getActivationDate(): Calendar
++setActivationDate(activationDate: Calendar): void
++isActive(): boolean
++setActive(isActive: boolean): void
++getRemainingQuantity(): int
++setRemainingQuantity(quantity: int): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>720</x>
+      <y>1010</y>
+      <w>320</w>
+      <h>340</h>
+    </coordinates>
+    <panel_attributes>Package
+--
+-packageId: int
+-name: String
+-duration: int
+-price: float
+-serviceType: ServiceType
+-quantity: int
+
+--
++getPackageId(): int
++setPackageId(packageId: int): void
++getName(): String
++setName(name: String): void
++getDuration(): int
++setDuration(duration: int): void
++getPrice(): float
++setPrice(price: float): void
++getServiceType(): ServiceType
++setServiceType(serviceType: ServiceType): void
++getQuantity(): int
++setQuantity(quantity: int): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>330</x>
+      <y>1120</y>
+      <w>410</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=*
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;390.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>780</x>
+      <y>520</y>
+      <w>200</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>ServiceUsage
+--
+-date: Calendar
+
+--
++getDate(): Calendar
++setDate(date: Calendar): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>770</y>
+      <w>260</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Data
+--
+-dataVolume: int
+
+--
++getDataVolume(): int
++setDataVolume(dataVolume: int): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>740</x>
+      <y>770</y>
+      <w>280</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>Call
+--
+-duration: int
+-calledPhone: String
+
+--
++getDuration(): int
++setDuration(duration: int): void
++getCalledPhone(): String
++setCalledPhone(calledPhone: String): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1050</x>
+      <y>770</y>
+      <w>370</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>SMS
+--
+-receiverPhoneNum: String
+
+--
++getReceiverPhoneNum(): String
++setReceiverPhoneNum(receiverPhoneNum: String): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>870</x>
+      <y>610</y>
+      <w>30</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>570</x>
+      <y>610</y>
+      <w>240</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>220.0;10.0;10.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>960</x>
+      <y>610</y>
+      <w>300</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;280.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>340</x>
+      <y>560</y>
+      <w>460</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=*
+m2=1</panel_attributes>
+    <additional_attributes>440.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1190</x>
+      <y>70</y>
+      <w>160</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enumeration&gt;&gt;
+ServiceType
+--
+Data
+TalkTime
+SMS</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1190</x>
+      <y>190</y>
+      <w>160</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enumeration&gt;&gt;
+TransferType
+--
+Incoming
+Outgoing</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

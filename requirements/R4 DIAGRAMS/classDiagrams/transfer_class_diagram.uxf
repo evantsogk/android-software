@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>180</x>
+      <y>60</y>
+      <w>330</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>TransferAcivity
+--
++ onCreate(savedInastanceState: Bundle): void
++ onCreateOptionsMenu(menu: Menu): boolean
++ onOptionsItemSelected(item: MenuItem): boolean
++ validate(): boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>650</x>
+      <y>50</y>
+      <w>400</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>TransferService
+--
++ transfer(user: User, receiverNum: String,
+  serviceType: ServiceType, quantity: int): Transfer
++ receive(user: User): ArrayList&lt;Transfer&gt;
++ updateRemaining(user: User, add: boolean,
+   serviceType: ServiceType, quantity: int): void
++ suffiecientRemaining(user:User, serviceType: ServiceType ,
+   quantity: int): boolean
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1200</x>
+      <y>50</y>
+      <w>260</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>TransferDAO
+--
++ AddUser(): void
++ save(entity: Transfer, user: int): void
++ delete(entity: Transfer, user: int): void
++ findAll(user: int): List&lt;Transfer&gt;
++ deleteAll(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>690</x>
+      <y>330</y>
+      <w>300</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>PackageRemaining
+--
++ updatePackageRemaining(user: User,
+  serviceType: ServiceType, quantity: int): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1190</x>
+      <y>800</y>
+      <w>320</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>ActivePackageDAO
+--
++ addUser(): void
++ save(entity: ActivePackage, user: int): void
++ delete(entity: ActivePackage, user: int): void
++ findAllPackages(user: int): List&lt;ActivePackage&gt;
++ findAllActive(user: int): List&lt;ActivePackage&gt;
++ find(packageId: int, user: int): ActivePackage
++ deleteAll(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>170</x>
+      <y>490</y>
+      <w>350</w>
+      <h>390</h>
+    </coordinates>
+    <panel_attributes>User
+--
+-uid: int
+-phoneNum: String
+-username: String
+-password: String
+-remainingData: int
+-remainingTalkTime: int
+-remainingSMS: int
+
+--
++getUid(): int
++setUid(uid: int): void
++getPhoneNum(): String
++setPhoneNum(phoneNum: String): void
++getUsername(): String
++setUsername(username: String): void
++getPassword(): String
++setPassword(password: String): void
++getRemainingData(): int
++setRemainingData(remainingData: int): void
++getRemainingTalkTime(): int
++setRemainingTalkTime(remainingTalkTime: int): void
++getRemainingSMS(): int
++setRemainingSMS(remainingSMS: int): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>90</x>
+      <y>260</y>
+      <w>190</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>UserDAO
+--
++ save(entity: User): void
++ delete(entity: User): void
++ findAll(): List&lt;User&gt;
++ find(userid: int): User
++ nextId(): int
++ deleteAll(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>680</x>
+      <y>580</y>
+      <w>330</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>ActivePackage
+--
+-packageId: int
+-activationDate: Calendar
+-isActive: boolean
+-remainingQuantity: int
+
+--
++getPackageId(): int
++setPackageId(packageId: int): void
++getActivationDate(): Calendar
++setActivationDate(activationDate: Calendar): void
++isActive(): boolean
++setActive(isActive: boolean): void
++getRemainingQuantity(): int
++setRemainingQuantity(quantity: int): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>680</x>
+      <y>980</y>
+      <w>320</w>
+      <h>340</h>
+    </coordinates>
+    <panel_attributes>Package
+--
+-packageId: int
+-name: String
+-duration: int
+-price: float
+-serviceType: ServiceType
+-quantity: int
+
+--
++getPackageId(): int
++setPackageId(packageId: int): void
++getName(): String
++setName(name: String): void
++getDuration(): int
++setDuration(duration: int): void
++getPrice(): float
++setPrice(price: float): void
++getServiceType(): ServiceType
++setServiceType(serviceType: ServiceType): void
++getQuantity(): int
++setQuantity(quantity: int): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1540</x>
+      <y>40</y>
+      <w>160</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enumeration&gt;&gt;
+ServiceType
+--
+Data
+TalkTime
+SMS</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1540</x>
+      <y>170</y>
+      <w>160</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enumeration&gt;&gt;
+TransferType
+--
+Incoming
+Outgoing</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1180</x>
+      <y>290</y>
+      <w>340</w>
+      <h>390</h>
+    </coordinates>
+    <panel_attributes>Transfer
+--
+-date: Calendar
+-senderNum: String
+-receiverNum: String
+-quantity: int
+-serviceType: ServiceType
+-transferType: TransferType
+-received: boolean
+
+--
++getDate(): Calendar
++setDate(date: Calendar): void
++getSenderNum(): String
++setSenderNum(senderNum: String): void
++getReceiverNum(): String
++setReceiveNum(receiverNum: String): void
++getQuantity(): int
++setQuantity(quantity: int): void
++getServiceType(): ServiceType
++setServiceType(serviceType: ServiceType): void
++getTransferType(): TransferType
++setTransferType(transferType: TransferType): void
++getReceived(): boolean
++setReceived(): void
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>500</x>
+      <y>110</y>
+      <w>170</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>150.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>330</x>
+      <y>160</y>
+      <w>30</w>
+      <h>350</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;330.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>220</x>
+      <y>390</y>
+      <w>30</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=*
+m2=1</panel_attributes>
+    <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>150</x>
+      <y>0</y>
+      <w>720</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;260.0;10.0;10.0;700.0;10.0;700.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>440</x>
+      <y>170</y>
+      <w>230</w>
+      <h>340</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;320.0;10.0;10.0;210.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>830</x>
+      <y>190</y>
+      <w>30</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;140.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>830</x>
+      <y>410</y>
+      <w>30</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=*
+m2=1</panel_attributes>
+    <additional_attributes>10.0;170.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>830</x>
+      <y>820</y>
+      <w>30</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+m2=*</panel_attributes>
+    <additional_attributes>10.0;160.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1040</x>
+      <y>110</y>
+      <w>180</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>160.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>510</x>
+      <y>520</y>
+      <w>690</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=*
+m2=1</panel_attributes>
+    <additional_attributes>670.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>510</x>
+      <y>700</y>
+      <w>190</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=*
+m2=1</panel_attributes>
+    <additional_attributes>170.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1020</x>
+      <y>190</y>
+      <w>180</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=*
+m2=1</panel_attributes>
+    <additional_attributes>160.0;180.0;10.0;180.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1320</x>
+      <y>170</y>
+      <w>30</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=*
+m2=1</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>980</x>
+      <y>390</y>
+      <w>230</w>
+      <h>500</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>210.0;470.0;110.0;470.0;110.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1000</x>
+      <y>720</y>
+      <w>240</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=*
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;220.0;10.0;220.0;80.0</additional_attributes>
+  </element>
+</diagram>

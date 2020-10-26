@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>250</x>
+      <y>120</y>
+      <w>360</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>LoginActivity
+--
++ onCreate(savedInstanceState: Bundle): void
++ onBackPressed(): void
++ validate(): boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>760</x>
+      <y>120</y>
+      <w>450</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>UserAuthentication
+--
++ login(username: String, password: String): User
++ signUp(username: String, password: String, phoneNum: String): User
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>920</x>
+      <y>580</y>
+      <w>190</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>UserDAO
+--
++ save(entity: User): void
++ delete(entity: User): void
++ findAll(): List&lt;User&gt;
++ find(userid: int): User
++ nextId(): int
++ deleteAll(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>250</x>
+      <y>360</y>
+      <w>350</w>
+      <h>390</h>
+    </coordinates>
+    <panel_attributes>User
+--
+-uid: int
+-phoneNum: String
+-username: String
+-password: String
+-remainingData: int
+-remainingTalkTime: int
+-remainingSMS: int
+
+--
++getUid(): int
++setUid(uid: int): void
++getPhoneNum(): String
++setPhoneNum(phoneNum: String): void
++getUsername(): String
++setUsername(username: String): void
++getPassword(): String
++setPassword(password: String): void
++getRemainingData(): int
++setRemainingData(remainingData: int): void
++getRemainingTalkTime(): int
++setRemainingTalkTime(remainingTalkTime: int): void
++getRemainingSMS(): int
++setRemainingSMS(remainingSMS: int): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>160</y>
+      <w>180</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>160.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>410</x>
+      <y>200</y>
+      <w>30</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;160.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>590</x>
+      <y>190</y>
+      <w>330</w>
+      <h>270</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;240.0;310.0;240.0;310.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1010</x>
+      <y>190</y>
+      <w>30</w>
+      <h>410</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;390.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
