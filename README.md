@@ -5,7 +5,7 @@ It also includes class, sequence, activity diagrams, use cases etc. Implemented 
 ## App screenshots
 Home screen            |  Packages
 :-------------------------:|:-------------------------:
-<img src="/scr1.jpg"  width="300" height="533"/> | <img src="/scr3.jpg"  width="300" height="533"/> 
+<img src="/scr1.jpg"  width="300" height="533"/> | <img src="/scr4.jpg"  width="300" height="533"/> 
 
 Transactions History            |  Statistics
 :-------------------------:|:-------------------------:
