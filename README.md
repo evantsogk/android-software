@@ -9,12 +9,5 @@ Home screen            |  Packages
 
 Transactions History            |  Statistics
 :-------------------------:|:-------------------------:
-<img src="/scr3.jpg"  width="300" height="533"/>  |  <img src="/scr4.jpg"  width="300" height="533"/>
+<img src="/scr4.jpg"  width="300" height="533"/>  |  <img src="/scr3.jpg"  width="300" height="533"/>
 
-
-<p float="left">
-  <img src="/scr1.jpg"  width="300" height="533"/>
-  <img src="/scr2.jpg"  width="300" height="533"/> 
-  <img src="/scr3.jpg"  width="300" height="533"/>
-  <img src="/scr4.jpg"  width="300" height="533"/>
-</p>
