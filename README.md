@@ -10,5 +10,3 @@ Home screen            |  Packages
 Transactions History            |  Statistics
 :-------------------------:|:-------------------------:
 <img src="/scr2.jpg"  width="300" height="533"/>  |  <img src="/scr3.jpg"  width="300" height="533"/>
-
-.
